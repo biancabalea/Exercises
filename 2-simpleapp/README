@@ -1,0 +1,1 @@
+Pentru a contstrui imaginea docker am folosit comanda "docker build -t simple-java-app ." - 
