@@ -1,3 +1,4 @@
+Am creat fisierul docker file pe care l-am rulat pentru a contrui imaginea docker.
 Pentru a contstrui imaginea docker am folosit comanda "docker build -t simple-java-app ." - https://github.com/biancabalea/Exercises/blob/main/2-simpleapp/docker.jpg?raw=true
 Pentru a rula container-ul am folosit comanda "docker run -e MY_ENV_VAR=Bianca simple-java-app" - https://github.com/biancabalea/Exercises/blob/main/2-simpleapp/testdocker.jpg?raw=true
 Am atasat imaginea creata in docker - https://github.com/biancabalea/Exercises/blob/main/2-simpleapp/image.jpg?raw=true
