@@ -1,1 +1,13 @@
-
+Pasul 1: Am folosit comanda "docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=password -d mysql:latest" pentru a rula containerul MySQL.-https://github.com/biancabalea/Exercises/blob/main/3-database/run_container.jpg?raw=true
+Pasul 2: Am folosit comanda "docker exec -it mysql-db mysql -uroot -p" pentru a introduce shell-ul MySQL in container. - https://github.com/biancabalea/Exercises/blob/main/3-database/create_database.jpg?raw=true
+Pasul 3: Utilizand comanda "CREATE DATABASE comapany;" am creat baza de date "company".-https://github.com/biancabalea/Exercises/blob/main/3-database/create_database.jpg?raw=true
+Pasul 4: Am folosit comanda "docker cp company.sql mysql-db:/company.sql" pentru a copia scriptul mysql in container.
+Pasul 5: Am folosit aceasta comanda "docker exec -it mysql-db mysql -uroot -p" pentru a verifica conexiunea dintre container si mysql. - https://github.com/biancabalea/Exercises/blob/main/3-database/change_database.jpg?raw=true
+Pasul 6: Pentru a accesa baza de date company am folosit comanda "use company;". - https://github.com/biancabalea/Exercises/blob/main/3-database/change_database.jpg?raw=true
+Pasul 7: Am folosit comanda "CREATE USER 'username'@'%' IDENTIFIED BY 'password';" pentru a crea un utilizator. -https://github.com/biancabalea/Exercises/blob/main/3-database/create_user.jpg?raw=true
+Pasul 8: Pentru a acorda permisiuni am utilizat comanda "GRANT ALL PRIVILEGES ON company.* TO 'username'@'%';". -https://github.com/biancabalea/Exercises/blob/main/3-database/create_user.jpg?raw=true
+Pasul 9: Pentru aplicarea permisiunilor am introdus comanda "FLUSH PRIVILEGES;". -https://github.com/biancabalea/Exercises/blob/main/3-database/create_user.jpg?raw=true
+Pasul 10: Pentru a calcula salariul mediu pentru fiecare departament am utilizat comenzile:
+SELECT department, AVG(salary) AS average_salary
+FROM employees
+GROUP BY department;. -https://github.com/biancabalea/Exercises/blob/main/3-database/average-salary.jpg?raw=true
